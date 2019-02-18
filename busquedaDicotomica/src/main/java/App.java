@@ -25,7 +25,7 @@ public class App {
         if (array[cen] == num) {
             System.out.println("El número " + num + " se encuentra en la posición " + cen);
         } else {
-            System.out.println("El número " + num + " 4no se ha encontrado");
+            System.out.println("El número " + num + " no se ha encontrado");
         }
     }
 

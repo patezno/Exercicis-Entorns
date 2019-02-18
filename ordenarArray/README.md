@@ -1,2 +1,2 @@
 # Ordenar Array
-Ordenar un array de la manera que se quiera
+Ordenar un array de manera descendente

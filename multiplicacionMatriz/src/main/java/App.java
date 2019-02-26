@@ -6,31 +6,28 @@ public class App {
 
         int[][] firstArray = {{1, 2, 3}, {4, 5, 6}};
         int[][] secondArray = {{2, 3}, {3, 4}, {5, 6}};
-        int ff = 0;
-        int fa = firstArray.length;
-        int cc;
-        int cB;
-        int cActual;
-        int r;
-        int cA;
-        int[][] thirdArray = {{}};
+        int[][] result = multiply(firstArray, secondArray);
 
-        while (ff < fa) {
-            cc = 0;
-            cB = secondArray[0].length;
-            while (cc < cB) {
-                r = 0;
-                cActual = 0;
-                cA = firstArray[0].length;
-                while (cActual < cA) {
-                    r += firstArray[cc][cActual] * secondArray[cActual][cc];
-                    cActual += 1;
+        System.out.println("El resultado de la multiplicación de los arrays es: " + Arrays.deepToString(result));
+    }
+
+    public static int[][] multiply(int[][] a, int[][] b) {
+
+        int[][] c = new int[a.length][b[0].length];
+
+        if (a[0].length == b.length) {
+
+            for (int i = 0; i < a.length; i++) {
+
+                for (int j = 0; j < b[0].length; j++) {
+
+                    for (int k = 0; k < a[0].length; k++) {
+                        c[i][j] += a[i][k] * b[k][j];
+                    }
                 }
-                thirdArray[ff][cc] = r;
             }
-            ff += 1;
         }
-        System.out.println(Arrays.deepToString(thirdArray));
+        return c;
     }
 
 }

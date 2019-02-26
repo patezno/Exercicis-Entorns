@@ -10,12 +10,15 @@ public class Ayuntamiento {
     // Constructor
 
     public Ayuntamiento() {
-
     }
+
+    // Setters
 
     public void setConjuntoBiblioteca(Set<Biblioteca> conjuntoBiblioteca) {
         this.conjuntoBiblioteca = conjuntoBiblioteca;
     }
+
+    // Getters
 
     public Set<Biblioteca> getConjuntoBiblioteca() {
         return conjuntoBiblioteca;

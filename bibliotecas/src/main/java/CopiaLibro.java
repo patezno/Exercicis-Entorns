@@ -1,2 +1,2 @@
-public class CopiaLibro {
+public class CopiaLibro extends CopiaEjemplar {
 }

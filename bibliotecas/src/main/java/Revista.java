@@ -1,2 +1,2 @@
-public class Revista {
+public class Revista extends Ejemplar{
 }

@@ -1,2 +1,2 @@
-public class Libro {
+public class Libro extends Ejemplar {
 }

@@ -1,4 +1,4 @@
-public class Personal {
+public class Persona {
 
     // Atributos
 
@@ -7,16 +7,16 @@ public class Personal {
     private String primerApellido = null;
     private String segundoApellido = null;
 
-    // Constructores
+    // Constructor
 
-    public Personal(String dni) {
-        this.dni = dni;
-    }
-
-    public Personal() {
+    public Persona() {
     }
 
     // Setters
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;

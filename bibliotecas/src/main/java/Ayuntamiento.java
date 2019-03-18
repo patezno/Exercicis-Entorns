@@ -1,15 +1,23 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class Ayuntamiento {
+public class Ayuntamiento extends EntidadPublica {
 
     // Atributos
 
     private Set<Biblioteca> conjuntoBiblioteca = new HashSet<Biblioteca>();
+    private Persona alcalde = null;
+    private EntidadPublica entidadPublica = null;
+    private Persona director = null;
 
-    // Constructor
+    // Constructores
 
     public Ayuntamiento() {
+    }
+
+    public Ayuntamiento(EntidadPublica entidadPublica, Persona alcalde) {
+        this.alcalde = alcalde;
+        this.entidadPublica = entidadPublica;
     }
 
     // Setters
@@ -18,9 +26,39 @@ public class Ayuntamiento {
         this.conjuntoBiblioteca = conjuntoBiblioteca;
     }
 
+    public void setAlcalde(Persona alcalde) {
+        this.alcalde = alcalde;
+    }
+
+    public void setEntidadPublica(EntidadPublica entidadPublica) {
+        this.entidadPublica = entidadPublica;
+    }
+
+    public void setDirector(Persona director) {
+        this.director = director;
+    }
+
     // Getters
 
     public Set<Biblioteca> getConjuntoBiblioteca() {
         return conjuntoBiblioteca;
+    }
+
+    public Persona getAlcalde() {
+        return alcalde;
+    }
+
+    public EntidadPublica getEntidadPublica() {
+        return entidadPublica;
+    }
+
+    public Persona getDirector() {
+        return director;
+    }
+
+    // Metodos
+
+    public Biblioteca crearBiblioteca() {
+        return new Biblioteca(this, entidadPublica, director);
     }
 }

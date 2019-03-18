@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class Biblioteca {
+public class Biblioteca extends EntidadPublica {
 
     // Atributos
 
@@ -69,12 +69,27 @@ public class Biblioteca {
 
     // Metodos
 
-    public Empleado crearEmpleado() {
-        return new Empleado(this, persona);
+    public void crearEmpleado() {
+        new Empleado(this, persona);
     }
 
-    public Socio crearSocio() {
-        return new Socio(this, persona);
+    public void eliminarEmpleado() {
+
     }
 
+    public void mostrarEmpleado() {
+
+    }
+
+    public void crearSocio() {
+        new Socio(this, persona);
+    }
+
+    public void eliminarSocio() {
+
+    }
+
+    public void mostrarSocio() {
+
+    }
 }

@@ -58,7 +58,11 @@ public class Ayuntamiento extends EntidadPublica {
 
     // Metodos
 
-    public Biblioteca crearBiblioteca() {
-        return new Biblioteca(this, entidadPublica, director);
+    public void crearBiblioteca() {
+        new Biblioteca(this, entidadPublica, director);
+    }
+
+    public void mostrarBiblioteca() {
+
     }
 }

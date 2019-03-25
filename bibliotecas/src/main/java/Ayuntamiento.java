@@ -65,4 +65,20 @@ public class Ayuntamiento extends EntidadPublica {
     public void mostrarBiblioteca() {
 
     }
+
+    public void crearLibro() {
+        new Libro();
+    }
+
+    public void crearRevista() {
+        new Revista();
+    }
+
+    public void comprarLibro(Libro libro) {
+
+    }
+
+    public void comprarRevista(Revista revista) {
+
+    }
 }

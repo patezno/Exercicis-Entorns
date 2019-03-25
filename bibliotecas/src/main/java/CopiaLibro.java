@@ -5,7 +5,7 @@ public class CopiaLibro extends CopiaEjemplar {
 
     // Atributos
 
-    private Map<String, Integer> listaLibros = new HashMap<String, Integer>();
+    private Map<Libro, Integer> listaLibros = new HashMap<Libro, Integer>();
 
     // Constructor
 
@@ -14,13 +14,13 @@ public class CopiaLibro extends CopiaEjemplar {
 
     // Setters
 
-    public void setListaLibros(Map<String, Integer> listaLibros) {
+    public void setListaLibros(Map<Libro, Integer> listaLibros) {
         this.listaLibros = listaLibros;
     }
 
     // Getters
 
-    public Map<String, Integer> getListaLibros() {
+    public Map<Libro, Integer> getListaLibros() {
         return listaLibros;
     }
 }
